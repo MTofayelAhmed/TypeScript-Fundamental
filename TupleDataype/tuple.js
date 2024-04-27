@@ -26,13 +26,16 @@ console.log(user);
 // }
 // console.log(mixedDataType["id"])
 // objects discussion
-var users;
-users = [];
-var user1;
-user1 = { id: 1111, name: "Lucky" };
-users.push(user1);
+// let users: object[];
+// users=[];
+// let user1:{id: number, name: string}
+// user1 ={id: 1111, name: "Lucky"}
+// users.push(user1);
 // if we want to make any property optional , we can use ? sign
 var user2;
 user2 = { id: 1112 };
 users.push(user2);
 console.log(users);
+for (var key in users) {
+    console.log(users[key]);
+}
