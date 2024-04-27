@@ -31,4 +31,8 @@ users = [];
 var user1;
 user1 = { id: 1111, name: "Lucky" };
 users.push(user1);
+// if we want to make any property optional , we can use ? sign
+var user2;
+user2 = { id: 1112 };
+users.push(user2);
 console.log(users);

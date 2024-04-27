@@ -45,7 +45,11 @@ let user1:{id: number, name: string}
 user1 ={id: 1111, name: "Lucky"}
 
 users.push(user1);
+
+
+// if we want to make any property optional , we can use ? sign
+
+let user2:{id: number, name?: string}
+user2= {id: 1112}
+users.push(user2)
 console.log(users)
-
-
-
