@@ -6,10 +6,23 @@ user.push(102, "Rakib");
 console.log(user);
 // enum data type (no duplicates data helps to store constant)
 // numeric enum 
-var DataType;
-(function (DataType) {
-    DataType[DataType["readData"] = 2] = "readData";
-    DataType[DataType["deleteData"] = 3] = "deleteData";
-    DataType[DataType["saveData"] = 4] = "saveData";
-})(DataType || (DataType = {}));
-console.log(DataType.readData);
+// enum DataType{
+//     readData =2,
+//     deleteData,
+//     saveData
+// }
+// console.log(DataType.readData)
+// string enum 
+// enum DataTypeString {
+//     readData = "READ_DATA",
+//     deleteData = "DELETE_DATA",
+// }
+// console.log(DataTypeString.deleteData)
+// Hetorogenious enum
+var mixedDataType;
+(function (mixedDataType) {
+    mixedDataType["readData"] = "Read_Data";
+    mixedDataType["deleteData"] = "DELETE_DATA";
+    mixedDataType[mixedDataType["id"] = 1111] = "id";
+})(mixedDataType || (mixedDataType = {}));
+console.log(mixedDataType["id"]);
