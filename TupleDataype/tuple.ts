@@ -29,12 +29,23 @@ console.log(user)
 // console.log(DataTypeString.deleteData)
 
 // Hetorogenious enum
-enum mixedDataType{
-    readData= "Read_Data",
-    deleteData= "DELETE_DATA",
-    id = 1111
-}
-console.log(mixedDataType["id"])
+// enum mixedDataType{
+//     readData= "Read_Data",
+//     deleteData= "DELETE_DATA",
+//     id = 1111
+// }
+// console.log(mixedDataType["id"])
+
+// objects discussion
+
+let users: object[];
+users=[];
+
+let user1:{id: number, name: string}
+user1 ={id: 1111, name: "Lucky"}
+
+users.push(user1);
+console.log(users)
 
 
 

@@ -19,10 +19,16 @@ console.log(user);
 // }
 // console.log(DataTypeString.deleteData)
 // Hetorogenious enum
-var mixedDataType;
-(function (mixedDataType) {
-    mixedDataType["readData"] = "Read_Data";
-    mixedDataType["deleteData"] = "DELETE_DATA";
-    mixedDataType[mixedDataType["id"] = 1111] = "id";
-})(mixedDataType || (mixedDataType = {}));
-console.log(mixedDataType["id"]);
+// enum mixedDataType{
+//     readData= "Read_Data",
+//     deleteData= "DELETE_DATA",
+//     id = 1111
+// }
+// console.log(mixedDataType["id"])
+// objects discussion
+var users;
+users = [];
+var user1;
+user1 = { id: 1111, name: "Lucky" };
+users.push(user1);
+console.log(users);
