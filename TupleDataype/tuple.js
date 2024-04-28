@@ -1,41 +1,14 @@
-// here we will discuss tuple DataType 
+// here we will discuss tuple DataType
 //  tuple data type basically mixed data - key , value;
-var user;
-user = [101, "tofayel"];
-user.push(102, "Rakib");
-console.log(user);
-// enum data type (no duplicates data helps to store constant)
-// numeric enum 
-// enum DataType{
-//     readData =2,
-//     deleteData,
-//     saveData
-// }
-// console.log(DataType.readData)
-// string enum 
-// enum DataTypeString {
-//     readData = "READ_DATA",
-//     deleteData = "DELETE_DATA",
-// }
-// console.log(DataTypeString.deleteData)
-// Hetorogenious enum
-// enum mixedDataType{
-//     readData= "Read_Data",
-//     deleteData= "DELETE_DATA",
-//     id = 1111
-// }
-// console.log(mixedDataType["id"])
-// objects discussion
-// let users: object[];
-// users=[];
-// let user1:{id: number, name: string}
-// user1 ={id: 1111, name: "Lucky"}
-// users.push(user1);
-// if we want to make any property optional , we can use ? sign
-var user2;
-user2 = { id: 1112 };
-users.push(user2);
+var users;
+users = [];
+var user1 = { name: "Lucky", id: 101 };
+var user2 = { name: "Luck", id: 102 };
+var user3 = { name: "Luc", id: 103 };
+users.push(user1, user2, user3);
 console.log(users);
-for (var key in users) {
-    console.log(users[key]);
+var getRequest;
+function requestHandler(requestType) {
+    console.log(requestType);
 }
+requestHandler("GET");
